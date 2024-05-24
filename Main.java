@@ -79,10 +79,11 @@ public class Main {
         Random random = new Random();
         String wordToGuess = words.get(random.nextInt(words.size()));
         char[] guessedWord = new char[wordToGuess.length()];
-        System.out.println("To słowo ma "+wordToGuess.length()+" liter");
         for (int i = 0; i < guessedWord.length; i++) {
             guessedWord[i] = '_';
         }
+        
+        System.out.println(guessedWord);
 
         boolean wordGuessed = true;
 
